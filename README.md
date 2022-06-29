@@ -1,5 +1,5 @@
 # React-Native-Serratec 🤓
-## Repositório para Exercícios e Projetos de Api 🖥️
+## Repositório para Exercícios e Projetos de React Native 🖥️
 
 ### Atividade Contador ✔️
 
