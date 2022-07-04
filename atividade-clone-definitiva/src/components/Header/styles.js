@@ -3,22 +3,28 @@ import colors from '../../themes/colors';
 
 export const Container = styled.View`
   position: absolute;
+  top: 0px;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
   height: 49px;
-  left: 0px;
-  top: 0px;
-  background: ${colors.primary};
-
+  left: 0;
+  margin-top: 35px;
+  padding: 0 30px;
+  text-align: center;
 `;
-
 
 export const Title = styled.Text`
   font-size: 24px;
   color: ${colors.secondary};
-  margin: 40px 0;
   font-weight: 800;
-  line-height: 22px;
+  letter-spacing: 1;
   font-family: 'sans-serif';
+`;
+
+export const Logo = styled.Image`
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  align-items: center;
 `;

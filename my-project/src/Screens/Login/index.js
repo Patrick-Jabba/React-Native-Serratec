@@ -7,6 +7,8 @@ import spacings from "../../Theme/spacings";
 import Gradient from "../../components/Gradient";
 import { useNavigation } from "@react-navigation/native";
 
+import { useProducts } from "../../context/ProductsContext";
+
 const Login = () => {
 
     const navigation = useNavigation();
@@ -14,6 +16,15 @@ const Login = () => {
     function openScreen() {
         navigation.navigate('Recuperar Senha')
     }
+
+
+    //no on press vai chmar esse setCart
+    setCart([...products, product])
+
+
+    const [products, setCart] = useProducts();
+    productsComponents.some(product => product.id === products.id)
+    //map, forEach, filter, find, some, every, reduce
 
     return (
         <Container>

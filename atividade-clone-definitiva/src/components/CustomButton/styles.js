@@ -15,6 +15,7 @@ export const ButtonPrimary = styled.TouchableOpacity`
 export const TextButton = styled.Text`
   color: ${colors.secondary};
   align-self: center;
+  justify-content: center;
   position: absolute;
   font-family: 'sans-serif';
   font-style: normal;

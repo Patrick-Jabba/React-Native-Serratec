@@ -1,14 +1,12 @@
 import React from 'react';
 import login from '../../../assets/login.png';
-import { Input } from '../../components/Input';
 import { ButtonPrimary, TextButton } from '../../components/CustomButton/styles';
 import { Logo } from '../../components/Logo/styles';
 import { Container, Title, TextInfo, SpacingHeight, WrapperTextInfo } from './styles';
-import colors from '../../themes/colors';
 
 import { useNavigation } from '@react-navigation/native';
 import spacing from '../../themes/spacing';
-import { LinearGradient } from 'expo-linear-gradient';
+import { Gradient } from '../../components/Gradient';
 
 
 export const PurchaseConfirmation = () => {
@@ -17,21 +15,10 @@ export const PurchaseConfirmation = () => {
   function openScreen() {
     navigation.navigate('UserRegister');
   }
-
-
+  
   return (
     <Container>
-      <LinearGradient
-        colors={[`${colors.primary}`, 'transparent', 'transparent', '#0ff']}
-        style={{
-          justifyContent: 'center',
-          alignItems: 'center',
-          borderRadius: 5,
-          height: '100%',
-          width: '100%',
-          position: 'absolute',
-        }}
-      />
+      <Gradient position={'top'} />
       <Logo source={login} />
       <SpacingHeight height={spacing.xxxl} />
       <Title> Compra efetuada com sucesso! </Title>

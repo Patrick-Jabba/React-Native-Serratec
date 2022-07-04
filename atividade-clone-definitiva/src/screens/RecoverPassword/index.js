@@ -3,11 +3,11 @@ import login from '../../../assets/login.png';
 import { Input } from '../../components/Input';
 import { ButtonPrimary, TextButton } from '../../components/CustomButton/styles';
 import { Logo } from '../../components/Logo/styles';
-import { Container, Title, TextInfo, SpacingHeight, WrapperTextInfo } from './styles';
-import colors from '../../themes/colors';
+import { Container, Title, SpacingHeight} from './styles';
 import { useNavigation } from '@react-navigation/native';
-import { LinearGradient } from 'expo-linear-gradient';
 import spacing from '../../themes/spacing';
+import { Gradient } from '../../components/Gradient';
+import { LogoutIcon } from '../../components/LogoutIcon';
 
 export const RecoverPassword = () => {
     const navigation = useNavigation();
@@ -18,19 +18,12 @@ export const RecoverPassword = () => {
 
     return (
         <Container>
-            <LinearGradient
-                colors={[`${colors.primary}`, 'transparent', 'transparent', '#0ff']}
-                style={{
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    borderRadius: 5,
-                    height: '100%',
-                    width: '100%',
-                    position: 'absolute',
-                }}
-            />
+            <Gradient position={'top'} />
+            <LogoutIcon />
             <Logo source={login} />
+            <SpacingHeight height={spacing.xxxl} />
             <Title> Recuperar Senha </Title>
+            <SpacingHeight height={spacing.xxl} />
             <Input placeholder={'Digite seu CPF'} />
             <SpacingHeight height={spacing.xxl} />
             <ButtonPrimary onPress={openScreen}>

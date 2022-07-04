@@ -36,3 +36,7 @@ export const SpacingHeight = styled.View`
     width: 100%;
     height: ${(props) => props.height || 5 };
 `;
+
+export const TextInfoContainer = styled.View`
+  flex-direction: row;
+`;
