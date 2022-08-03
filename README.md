@@ -7,4 +7,4 @@
 
 ### Atividade Clone - Tendo como parâmetro um protótipo no Figma, clonar as telas do ecommerce implementando não só a parte estética mas também o roteamento entre screens.
 
-### Projeto Final da disciplina de React Native - Desenvolver um aplicativo para ecommerce focado no administrativo, isto é, cadastro de colaboradores, produtos, categorias de produtos consumindo uma api para o CRUD de cada um dessas entidades.
+### Projeto Final da disciplina de React Native - Desenvolver um aplicativo para ecommerce focado no administrativo, isto é, cadastro de colaboradores, produtos, categorias de produtos consumindo uma api para o CRUD de cada uma dessas entidades.
